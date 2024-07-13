@@ -7,6 +7,7 @@ Download link for wordpress: https://wordpress.org/download/
 Docker-compose file is created and kept in Question1 folder which will pull the wordpress docker and mySQL docker.
 
 For making Wordpress running follow the command:
+* Note: Update the Enviorment values in docker-compose before making it up*
 ```shell
 git clone https://github.com/Sukhilnair/Exam.git
 cd Exam/Question1/
@@ -20,6 +21,7 @@ Link for the project: https://github.com/UnpredictablePrashant/StreamingApp
 ![Example Usage](./Question2/StreamingApp.drawio.png)
 
 To create Docker containers for both the frontend and backend of the streaming application, Dockerfile, Docker Compose, and a shell script have been prepared. To build and run the Docker containers for the frontend and backend, execute the following command.
+* Note: Update the Enviorment values in docker-compose before making it up*
 
 ```shell
 git clone https://github.com/Sukhilnair/Exam.git
