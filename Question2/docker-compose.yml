@@ -4,7 +4,7 @@ services:
     build:
       context: ./frontend
       dockerfile: Dockerfile
-      image: sukhilnair/streaming:frontend_v0.1
+    image: sukhilnair/streaming:frontend_v0.1
     container_name: streaming-frontend
     environment:
       AWS_IP: "0.0.0.0"
@@ -16,7 +16,7 @@ services:
     build:
       context: ./backend/authService
       dockerfile: Dockerfile
-      image: sukhilnair/streaming:backend_auth_v0.1
+    image: sukhilnair/streaming:backend_auth_v0.1
     container_name: authentication-backend
     environment:
       MONGO_URI: "mongodb+srv://sukhilnair:<password>@cluster0.dm4xp4t.mongodb.net/travelmemory"
@@ -33,7 +33,7 @@ services:
     build:
       context: ./backend/streamingService
       dockerfile: Dockerfile
-      image: sukhilnair/streaming:backend_stream_v0.1
+    image: sukhilnair/streaming:backend_stream_v0.1
     container_name: stream-backend
     environment:
       MONGO_URI: "mongodb+srv://sukhilnair:<password>@cluster0.dm4xp4t.mongodb.net/travelmemory"
